@@ -12,11 +12,12 @@ module DummyLocale
       I18n.backend.load_translations
       translations = wrap(source_translations)
       I18n.backend.store_translations(destination_locale, translations)
+      I18n.available_locales += [destination_locale]
     end
 
     private
 
-    attr_reader :destination_locale, :source_locale, :tag
+    attr_reader :source_locale, :destination_locale, :tag
 
     def source_translations
       I18n.backend.send(:translations)[source_locale] ||

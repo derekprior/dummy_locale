@@ -1,7 +1,7 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'dummy_locale/version'
+require "dummy_locale/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "dummy_locale"
@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Derek Prior"]
   spec.email         = ["derekprior@gmail.com"]
 
-  spec.summary       = %q{Generates a dummy locale for visually confirming translations}
+  spec.summary       = "Generates a dummy locale for visually confirming translations"
   spec.homepage      = "https://github.com/thoughtbot/dummy_locale"
   spec.license       = "MIT"
 
