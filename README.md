@@ -21,7 +21,7 @@ re-rendering forms, and other strings that Rails defaults to English via
 Dummy Locale builds a complete copy of your source locale, with each value
 "translated" by bracketing it with the locale. For example, in the default
 configuration, a key that translates to "Example" in the source locale will
-translate to "zzExamplezz" in the dummy locale.
+translate to "ZZExampleZZ" in the dummy locale.
 
 The application remains usable but allows developers and product managers to
 easily see which strings may have been missed.
