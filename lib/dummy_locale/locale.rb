@@ -8,6 +8,11 @@ module DummyLocale
       @tag = destination_locale.to_s.upcase
     end
 
+    # Generates the destination locale from the source locale
+    #
+    # Wraps the translated values in an upcased version of the destination
+    # locale specifier and adds the destination locale to the list of available
+    # locales.
     def generate
       I18n.backend.load_translations
       translations = wrap(source_translations)
