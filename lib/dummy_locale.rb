@@ -3,8 +3,12 @@ require "dummy_locale/version"
 require "dummy_locale/locale"
 
 module DummyLocale
-  def self.generate(*args)
-    dummy_locale = Locale.new(*args)
+  def self.generate(source_locale: :en, destination_locale: :zz)
+    dummy_locale = Locale.new(
+      source_locale: source_locale,
+      destination_locale: destination_locale
+    )
+
     dummy_locale.generate
     I18n.backend.class.prepend(reloader_for(dummy_locale))
   end
