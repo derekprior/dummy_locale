@@ -49,5 +49,4 @@ Run `rails server`, visit your application, and switch your locale to the
 
 ## About
 
-Dummy Locale is maintained by [Derek Prior]
-[Derek Prior]: http://prioritized.net
+Dummy Locale is maintained by [Derek Prior](http://prioritized.net)
